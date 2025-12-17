@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I miei titoli</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <span class="icon">←</span>
+  <h1 class = "miotitolo">I miei titoli</h1>
+  <span class="icon">👤</span>
+</header>
+
+<div class="status">TITOLO ATTIVO</div>
+
+<section class="card">
+
+  <h2 class="accordion-header" id="toggleCard">
+    Controllo e validazione
+    <span class="arrow" id="arrow">⌃</span>
+  </h2>
+
+  <div class="accordion-content" id="cardContent">
+    <img class="qr"
+         src="https://api.qrserver.com/v1/create-qr-code/?size=220x220&data=201663451"
+         alt="QR Code">
+
+    <div class="ticket-code">201663451</div>
+
+    <div class="card-info">
+      <div>🕒 <span id="currentTime">--:--:--</span></div>
+      <div>🔋 657</div>
+    </div>
+  </div>
+
+</section>
+
+
+<section class="info">
+  <div class="stripe"></div>
+
+  <h3>PROMO URBANO TERNI</h3>
+  <p class="company"></p>
+
+  <p class="desc">
+    BUSITALIA – Umbria <br>
+    Il titolo è personale e non cedibile<br>
+    Validità 100 minuti dalla convalida
+  </p>
+
+  <div class="timer-box">
+    Tempo restante: <br>
+    <span id="remainingTime">01:30:00</span>
+  </div>
+
+  <div class="details">
+    <div>
+      Attivato il: <br>
+      <span id="activatedAt">--/--/---- --:--:--</span>
+    </div>
+    <div>
+      Emesso il:
+      <strong id="issuedAt">--/--/---- --:--</strong>
+    </div>
+    
+    <div class="price-row">
+      <span class="price-label">Prezzo</span>
+      <span class="price-value">€1,30</span>
+    </div>
+  </div>
+</section>
+
+<div class="price-image">
+      <img src="img/logo.png" alt="Immagine informativa">
+
+      <div class="price-image-right">
+        #5555/108035
+      </div>
+</div>
+<div class="price-image-text">
+        E' personale e non cedibile; Tutti i biglietti devono essere<br>
+        convalidati ad ogni ingresso nel bus; I biglietti sono validi<br>
+        tutti i giorni, feriali e festivi, senza limitazioni del numero<br>
+        di corse. Il titolo è utilizzabile entro il 31/03/2026
+      </div>
+
+<script src="script.js"></script>
+</body>
+</html>
